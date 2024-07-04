@@ -35,3 +35,5 @@ export default function RootLayout() {
     </ThemeProvider>
   );
 }
+
+// "react-native-image-slider-box": "^2.0.7",  Delete, 6 High severity Vulne.
