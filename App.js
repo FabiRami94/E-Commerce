@@ -8,7 +8,7 @@ import { useCallback } from "react";
 export default App = () => {
 
     const [fontsLoaded] = useFonts({
-        // regular: require(""), //Place 30 Min
+        // regular: require(""), //Place 30 Min, same
     });
 
     return(
