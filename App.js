@@ -13,7 +13,8 @@ export default App = () => {
 
     return(
         <View>
-            <Text >Holaa!!</Text>
+            <Text >Holaa!!!!</Text>
+            
         </View>
     )
 };
