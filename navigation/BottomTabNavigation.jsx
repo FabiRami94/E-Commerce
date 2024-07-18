@@ -1,12 +1,14 @@
 
 // rnfe  Create a new component   s add a styles.
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; //Move between screens
-import Home from '../screens/Home';
-import Search from '../screens/Search';
-import Profile from '../screens/Profile';
+import {Home, Search, Profile} from '../screens';
+import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,9 +32,38 @@ const BottomTabNavigation = () => {
       <Tab.Screen 
         name='Home' 
         component={Home}
-        options={''}></Tab.Screen>
-      <Tab.Screen name='Search' component={Search}></Tab.Screen>
-      <Tab.Screen name='Profile' component={Profile}></Tab.Screen>
+        options={{
+          tabBarIcon: ({focused}) => {
+            return <Ionicons name={ focused ? 'home' : 'home-outline'} 
+              size={24}
+              color={focused ? 'blue' : 'black'}
+              ></Ionicons>
+          }
+        }}></Tab.Screen>
+
+      <Tab.Screen 
+        name='Search' 
+        component={Search}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return <Ionicons name={'search-sharp'} 
+              size={24}
+              color={focused ? 'blue' : 'black'}
+              ></Ionicons>
+          }
+        }}></Tab.Screen>
+
+      <Tab.Screen 
+        name='Profile' 
+        component={Profile}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return <Ionicons name={ focused ? 'person' : 'person-outline'} 
+              size={24}
+              color={focused ? 'blue' : 'black'}
+              ></Ionicons>
+          }
+        }}></Tab.Screen>
     </Tab.Navigator>
   )
 }
