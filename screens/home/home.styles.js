@@ -15,6 +15,23 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center'
     },
+    cartCount: {
+        position: 'absolute',
+        bottom: 16,
+        width: 16, 
+        height: 16, 
+        borderRadius: 8,
+        alignItems: 'center',
+        backgroundColor: 'blue',
+        justifyContent: 'center',
+        zIndex: 3,
+    },
+    cartNumber: {
+        fontFamily: 'regular',
+        fontWeight: '600',
+        fontSize: 10,
+        color: 'white',
+    }
 });
 
 export default styles;
