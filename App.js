@@ -14,7 +14,7 @@ const stack = createNativeStackNavigator();
 export default App = () => {
 
     const [fontsLoaded] = useFonts({
-        // regular: require(""), //Place 55 Min SAME.
+        // regular: require(""), //Place 55 Min SAME SAME, TOMORROW RESUME..
     });
 
     return(
