@@ -5,6 +5,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Fontisto, Ionicons } from '@expo/vector-icons';
 import { Welcome } from '../../components';
+import Carousel from '../../components/home/carousel/Carousel';
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       </View>
       <ScrollView>
         <Welcome></Welcome>
+        <Carousel></Carousel>
       </ScrollView>
     </SafeAreaView>
   )

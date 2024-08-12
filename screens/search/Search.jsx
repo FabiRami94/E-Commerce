@@ -10,17 +10,13 @@ import { useNavigation } from '@react-navigation/native';
 const Search = () => {
 
   const navigation = useNavigation();
-  
+
   return (
     <SafeAreaView>
 
       <View style={styles.searchContainer(Colors.light.background)}>
-        <TouchableOpacity>
-          <Feather 
-            name='search' 
-            size={24} 
-            style={styles.searchIcon}>      
-          </Feather>
+        <TouchableOpacity style={styles.searchBtn}>
+          <Ionicons name='camera-outline' size={24}></Ionicons>
         </TouchableOpacity>
         <View style={styles.searchWrapper}>
           <TextInput 
@@ -32,8 +28,12 @@ const Search = () => {
         </View>
         
         <View>
-          <TouchableOpacity style={styles.searchBtn}>
-            <Ionicons name='camera-outline' size={24}></Ionicons>
+          <TouchableOpacity style={styles.searchBtn}>       
+            <Feather 
+              name='search' 
+              size={24} 
+              style={styles.searchIcon}>      
+            </Feather> 
           </TouchableOpacity>
         </View>
       </View>
