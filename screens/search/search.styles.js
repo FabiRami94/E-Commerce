@@ -2,13 +2,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-        width: "100%"
-    },
-    welcomeText: (color) => ({
-        color: color,
-        marginLeft: 20
-    }),
 
     searchContainer: (color) => ({
         height: 50,

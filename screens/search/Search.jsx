@@ -1,23 +1,18 @@
 
 import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
-import styles from './welcome.styles';
-import Colors from '../../../constants/Colors';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import styles from './search.styles.js';
+import Colors from '../../constants/Colors';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
-
-const Welcome = () => {
+const Search = () => {
 
   const navigation = useNavigation();
-
+  
   return (
-    <View>
-
-      <View style={styles.container}>
-        <Text style={styles.welcomeText(Colors.light.text)}>Find The Most</Text>
-        <Text style={styles.welcomeText()}>Luxuriuos Furnitures</Text>
-      </View>
+    <SafeAreaView>
 
       <View style={styles.searchContainer(Colors.light.background)}>
         <TouchableOpacity>
@@ -43,8 +38,8 @@ const Welcome = () => {
         </View>
       </View>
 
-    </View>
+    </SafeAreaView>
   )
 }
 
-export default Welcome;
+export default Search;
