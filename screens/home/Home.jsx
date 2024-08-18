@@ -31,9 +31,9 @@ const Home = () => {
         </View>
       </View>
       <ScrollView>
-        <Welcome></Welcome>
+        {/* <Welcome></Welcome>
         <Carousel></Carousel>
-        <Headings></Headings>
+        <Headings></Headings> */}
       </ScrollView>
     </SafeAreaView>
   )

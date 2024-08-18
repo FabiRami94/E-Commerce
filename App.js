@@ -9,9 +9,10 @@ import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
 import BottomTabNavigation from './navigation/BottomTabNavigation';
 
-const stack = createNativeStackNavigator();
 
 export default App = () => {
+    
+    const stack = createNativeStackNavigator();
 
     const [fontsLoaded] = useFonts({
         // regular: require(""), //Place 1H 25 Min.

@@ -8,7 +8,7 @@ const Headings = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text>New Rivals</Text>
+        <Text style={styles.headerTitle}>New Rivals</Text>
         <TouchableOpacity>
           <Ionicons name='ios-grid' size={24}></Ionicons>
         </TouchableOpacity>

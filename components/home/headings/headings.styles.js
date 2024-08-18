@@ -6,7 +6,11 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   header: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  headerTitle: {
+    fontFamily: 'semibold'
   }
 });
 
